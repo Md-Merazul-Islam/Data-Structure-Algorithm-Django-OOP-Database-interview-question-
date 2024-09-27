@@ -11,54 +11,54 @@ Ans: Time complexity helps us understand how efficiently algorithms perform as i
 
 ## 3. What is the time complexity of the following code?
 
-cpp
-Copy code
-for(int i = 0; i < n; i++) {
-    cout << i << endl;
-}
-Ans: O(N)
+        cpp
+        Copy code
+        for(int i = 0; i < n; i++) {
+            cout << i << endl;
+        }
+        Ans: O(N)
 
 ## 4. What is the time complexity of this code?
 
-cpp
-Copy code
-for(int i = N; i > 1; i = i / 2) {
-    cout << i << endl;
-}
-Ans: O(log N)
+        cpp
+        Copy code
+        for(int i = N; i > 1; i = i / 2) {
+            cout << i << endl;
+        }
+        Ans: O(log N)
 
 ## 5. What is the time complexity of this code?
 
-cpp
-Copy code
-for(int i = 1; i < n; i = i * 2) {
-    cout << i << endl;
-}
-Ans: O(log N)
+        cpp
+        Copy code
+        for(int i = 1; i < n; i = i * 2) {
+            cout << i << endl;
+        }
+        Ans: O(log N)
 
 ## 6. What is the time complexity of this code?
 
-cpp
-Copy code
-for(int i = 1; i * i <= n; i++) {
-    if(n % i == 0) {
-        cout << i << " ";
-        cout << n / i << " ";
-    }
-}
-Ans: O(√n)
+        cpp
+        Copy code
+        for(int i = 1; i * i <= n; i++) {
+            if(n % i == 0) {
+                cout << i << " ";
+                cout << n / i << " ";
+            }
+        }
+        Ans: O(√n)
 
 ## 7. What is the time complexity of this code?
 
-cpp
-Copy code
-int i, j, k = 0;
-for(i = n / 2; i <= n; i++) {
-    for(j = 2; j <= n; j *= 2) {
-        k = k + n / 2;
-    }
-}
-Ans: O(N log N)
+        cpp
+        Copy code
+        int i, j, k = 0;
+        for(i = n / 2; i <= n; i++) {
+            for(j = 2; j <= n; j *= 2) {
+                k = k + n / 2;
+            }
+        }
+        Ans: O(N log N)
 
 ## 8. What is space complexity?
 Ans: Space complexity measures the amount of memory an algorithm uses relative to the input size. It helps understand how memory usage grows with input size. Typical space complexities:
@@ -97,14 +97,15 @@ Ans: A singly linked list has nodes that contain a data field and a next field, 
 
 ## 4. How to insert a new node in a singly linked list at the beginning?
 
-cpp
-Copy code
-void insert_at_head(Node*& head, int v) {
-    Node* newNode = new Node(v);
-    newNode->next = head;
-    head = newNode;
-    cout << "Inserted at new head" << endl;
-}
+        cpp
+        Copy code
+        void insert_at_head(Node*& head, int v) {
+            Node* newNode = new Node(v);
+            newNode->next = head;
+            head = newNode;
+            cout << "Inserted at new head" << endl;
+        }
+        
 ## 5. How to insert a new node in a singly linked list at the end?
 
 cpp
